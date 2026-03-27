@@ -12,12 +12,9 @@
       background: #FAFAF8;
       line-height: 1.7;
       padding: 48px 24px;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
-    .container { max-width: 480px; text-align: center; }
+    .container { max-width: 600px; margin: 0 auto; }
+    .hero { text-align: center; margin-bottom: 56px; padding-top: 48px; }
     h1 {
       font-weight: 200;
       letter-spacing: 8px;
@@ -30,35 +27,69 @@
       color: #3a3a38;
       margin-bottom: 16px;
     }
-    .description {
+    .subtitle {
       font-size: 15px;
       color: #AEAEA6;
-      margin-bottom: 48px;
     }
-    .links {
+    h2 {
+      font-weight: 400;
+      font-size: 18px;
+      margin: 32px 0 12px;
+    }
+    p, li {
+      font-size: 15px;
+      color: #3a3a38;
+      margin-bottom: 12px;
+    }
+    ul { padding-left: 20px; }
+    .footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #E8E8E4;
       display: flex;
       gap: 24px;
       justify-content: center;
       flex-wrap: wrap;
     }
-    .links a {
+    .footer a {
       color: #AEAEA6;
       font-size: 14px;
       text-decoration: none;
       letter-spacing: 0.3px;
     }
-    .links a:hover { color: #1C1C1A; }
+    .footer a:hover { color: #1C1C1A; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>capture</h1>
-    <p class="tagline">Send a thought to yourself.</p>
-    <p class="description">
-      Tap. Type. It's in your inbox.<br>
-      A minimal app for capturing thoughts before they disappear.
-    </p>
-    <div class="links">
+    <div class="hero">
+      <h1>capture</h1>
+      <p class="tagline">Send a thought to yourself.</p>
+      <p class="subtitle">Tap. Type. It's in your inbox.</p>
+    </div>
+
+    <h2>What is Capture?</h2>
+    <p>Capture is a minimal mobile and web app for quickly emailing a thought to yourself. When an idea strikes, open the app, type your thought, and it's instantly sent to your own Gmail inbox. No folders, no categories, no complexity — just a fast way to capture thoughts before they disappear.</p>
+
+    <h2>How it works</h2>
+    <ul>
+      <li>Sign in with your Google account</li>
+      <li>Tap anywhere to start typing</li>
+      <li>Your thought is sent as an email from your Gmail to your Gmail</li>
+      <li>It shows up in your inbox, ready to act on later</li>
+    </ul>
+
+    <h2>How Capture uses your Google account</h2>
+    <p>Capture uses Google Sign-In to authenticate you and requests the <strong>gmail.send</strong> scope to send emails on your behalf. This is the only Google permission the app uses — it cannot read, modify, or delete your emails.</p>
+    <p>Your data is sent directly from the app to the Gmail API. There is no backend server. No data is stored, collected, or shared with third parties.</p>
+
+    <h2>Available on</h2>
+    <ul>
+      <li>Android (Google Play — coming soon)</li>
+      <li>Web</li>
+    </ul>
+
+    <div class="footer">
       <a href="https://captureapp.dev/privacy">Privacy Policy</a>
       <a href="mailto:andrey.boar@gmail.com">Contact</a>
     </div>
